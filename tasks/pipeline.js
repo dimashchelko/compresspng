@@ -29,6 +29,8 @@ var jsFilesToInject = [
   'vendor/js/jquery-2.2.1.min.js',
   'js/dependencies/sails.io.js',
   'vendor/js/bootstrap.min.js',
+  'vendor/js/dropzone.js',
+  'js/main.js',
 
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
