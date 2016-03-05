@@ -2,10 +2,10 @@ module.exports = {
     index: function (req, res) {
         res.view({
             meta:{
-                keywords:'adoric',
-                description:'adoric'
+                keywords:'compresspng',
+                description:'compresspng'
             },
-            layout: false
+            layout: 'public/layout'
         });
     }
 };
