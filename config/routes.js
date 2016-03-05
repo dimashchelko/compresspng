@@ -1,3 +1,4 @@
 module.exports.routes = {
-  'get /': 'Public'
+  'get /': 'Public',
+  'post /User': 'UserController.create'
 };
