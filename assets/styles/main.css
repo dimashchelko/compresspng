@@ -59,8 +59,26 @@ body {
   min-width: 100%;
   height: 500px;
 }
-
-
+#my-awesome-dropzone {
+  position: absolute;
+  width: 450px;
+  height: 100%;
+}
+#my-awesome-dropzone .dz-message {
+  text-align: center;
+  padding-top: 8px;
+}
+#my-awesome-dropzone .dz-image-preview {
+  padding: 10px;
+  text-align: center;
+}
+#my-awesome-dropzone .dz-remove{
+  display:none;
+}
+#my-awesome-dropzone .dz-success-mark,
+#my-awesome-dropzone .dz-error-mark{
+  float: right;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -102,15 +120,19 @@ body {
 }
 .centerSection {
   left: 50%;
-  margin-left: -200px;
+  margin-left: -250px;
   margin-top: 100px;
 }
 .dropSection {
-  height: 160px;
+  height: 258px;
   border: 1px dashed;
-  width: 400px;
+  width: 450px;
   border-radius: 6px;
  }
+.dropSection:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
