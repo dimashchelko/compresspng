@@ -1,6 +1,4 @@
 var geoip = require('geoip-lite');
-var os = require('os');
-var ifaces = os.networkInterfaces();
 
 module.exports = {
     index: function (req, res) {
@@ -8,13 +6,9 @@ module.exports = {
 
         var geo = geoip.lookup(ip);
 
-        res.json({notes: geo});
-        /*res.view({
-            meta:{
-                keywords:'compresspng',
-                description:'compresspng'
-            },
+        res.view({
+            geo: geo,
             layout: 'public/layout'
-        });*/
+        });
     }
 };
