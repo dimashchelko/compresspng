@@ -6,9 +6,6 @@ module.exports = {
 
         var geo = geoip.lookup(ip);
 
-        res.view({
-            geo: geo,
-            layout: 'public/layout'
-        });
+        res.json({geo: geo})
     }
 };
